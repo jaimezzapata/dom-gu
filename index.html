@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y Sección</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<section class="container">
+    <form class="left-side">
+        <h2>Formulario</h2>
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" id="nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input id="email" type="email" id="email" name="email">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Telefono:</label>
+            <input id="telefono" id="mensaje" name="mensaje">
+        </div>
+        <div class="form-group">
+            <label for="fecha">Fecha Nacimiento:</label>
+            <input id="fecha" id="mensaje" name="mensaje" type="datetime-local">
+        </div>
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <input id="ciudad" id="mensaje" name="mensaje">
+        </div>
+        <button type="button" onclick="capturaDatos()">Registrar</button>
+    </form>
+    <section class="right-side">
+        <h2>Sección Vacía</h2>
+        <p>Este es el lado derecho de la página, aún no tiene contenido.</p>
+        <section id="cards">
+           
+        </section>
+    </section>
+</section>
+<script src="./script.js"></script>
+</body>
+</html>
