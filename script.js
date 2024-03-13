@@ -29,19 +29,13 @@ function mostrarCards() {
     document.getElementById("cards").append(card);
   });
 }
-
-
-let numeros = []
-numeros.push(1)
-numeros.push(2)
-numeros.push(0)
-
-numeros.pop()
-numeros.pop()
-numeros.pop()
-
-
-
-
-
-console.log(numeros)
+let inputs = document.querySelectorAll('#formulario input')
+// console.log(inputs)
+inputs.forEach(function(input){
+  // console.log(input)
+  input.addEventListener('click', validarFormulario)
+  input.addEventListener('blur', validarFormulario)
+})
+function validarFormulario(){
+  console.log('Validando formulario...')
+}

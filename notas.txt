@@ -1,0 +1,7 @@
+Todos los arreglos reciben diferentes métodos que permiten iterar y recorrer el contenido
+
+map() -> Itera sobre cada elemento dentro del arreglo
+forEach -> lo mismo que el map pero distinto en cuanto al retorno de contenido
+find -> recorre o itera el arreglo y busca un único elemento que coincida con una condición y retorna ese elemento
+filter -> recorre o itera el arreglo y busca todos los elementos que coincidan con una condición
+some -> recorre o itera el arreglo y busca un único elemento que coincida con una condición y retorna un true o false
