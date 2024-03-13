@@ -29,13 +29,27 @@ function mostrarCards() {
     document.getElementById("cards").append(card);
   });
 }
-let inputs = document.querySelectorAll('#formulario input')
+let inputs = document.querySelectorAll("#formulario input");
 // console.log(inputs)
-inputs.forEach(function(input){
+inputs.forEach(function (input) {
   // console.log(input)
-  input.addEventListener('click', validarFormulario)
-  input.addEventListener('blur', validarFormulario)
-})
-function validarFormulario(){
-  console.log('Validando formulario...')
+  // input.addEventListener("click", validarFormulario);
+  // input.addEventListener("blur", validarFormulario);
+  input.addEventListener("keyup", validarFormulario);
+});
+
+let expresionesRegulares = {
+  nombre: /^[a-zA-Z]+$/,
+};
+
+function validarFormulario(e) {
+  switch (e.target.name) {
+    case "nombre":
+        if(expresionesRegulares.nombre.test(e.target.value)){
+          console.log('Pasó la validacion')
+        } else {
+          console.log('No pasó la validacion')
+        }
+      break;
+  }
 }
